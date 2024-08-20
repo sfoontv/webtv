@@ -1,0 +1,411 @@
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://sirometv.github.io/Live/bootstrap.min.css" rel="stylesheet">
+
+<link rel="shortcut icon" type="x-icon" href="https://i.postimg.cc/d1hHy4ss/11.png">
+<title>Sirome Live TV</title>
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Rambla:400i');
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: xx-large;
+    font-family: cursive;
+}
+::-webkit-scrollbar{
+  display: block;
+  width: 100%;
+  overflow: fixed;
+  height: 100%;
+}
+*{
+    -ms-overflow-style:none;
+    scrollbar-width:none
+}
+body{
+    margin:10px;
+    background:black;
+    font-family:Arial,Helvetica,sans-serif;
+    line-height:1.5;
+    color:white;
+    text-align:center;
+    user-select: none;
+        body {
+    background-color: black;
+}
+
+
+  </style>
+  
+  
+  
+  
+  
+ <style>
+
+ .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+           
+          }
+
+.channel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.channel-item {
+    background-color: #222;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.channel-item:hover {
+    transform: scale(1.05);
+}
+
+.channel-item img {
+   height:75%;
+   width:100px;
+}
+
+.channel-item span {
+    display: block;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 1px;
+}
+.blob img{
+    width:50%;
+    display:none;
+    margin:auto;
+    margin-top:25px
+}
+
+ .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+
+</style> 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <style>
+  @import url('https://fonts.maateen.me/adorsho-lipi/font.css');
+  
+  
+  
+   .notice-movies{
+     margin-top:0px;
+     background: ;
+     border:3px solid white;
+     color:white;
+     position:relative;
+     padding:6px;
+     overflow:hidden;
+     font-weight:bold;
+     font-family: 'AdorshoLipi', sans-serif;
+     font-weight:bold;
+     border-radius:7px}
+     
+ .notice-movies::before{
+     content:'';
+     position:absolute;
+     border-left:17px solid var(--black);
+     border-bottom:17px solid var(--black);
+     border-top:17px solid transparent;
+     border-right:17px solid transparent;
+     left:98px;
+     top:0;
+     z-index:1}
+     
+     
+ .notice-movies::after{
+     content:'Disclaimer:';
+     position:absolute;
+     font-weight:bold;
+     line-height:2.5;
+     background:#1c8ad9;
+     color:white;
+     font-family: 'Magisho', sans-serif; 
+     font-weight:600;left:0;top:0}
+
+  </style>
+  
+  <style>
+      /* Prevent scrolling for embed-responsive */
+.embed-responsive {
+    overflow: hidden; /* Prevent scroll */
+    height: auto;
+}
+
+.embed-responsive iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Prevent scrolling for notice-movies */
+.notice-movies {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Allow scrolling only on channel-grid */
+.channel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    max-height: 400px; /* Set a height to make it scrollable */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+  </style>
+
+
+</head>
+
+<body>
+	
+<div class="container tv-area">
+<div class="embed-responsive embed-responsive-16by9">
+<iframe name="player" class="embed-responsive-item" allowfullscreen src="https://mdsirome.github.io/webtv/BD/JamunaTV"></iframe>
+    </div>
+
+  
+<marquee class="notice-movies" scrollamount="8">
+            নোটিশঃ- Ⓒ কপিরাইট: Sirome TV Stream এই ওইেব প্লাটফর্ম
+            অন্তর্ভুক্ত কোনো চ্যানেল আমরা নিজেরা স্ট্রিম করিনা, সমস্ত স্ট্রিমিং লিংক
+            গুলো ইন্টারনেটের ফ্রি ওয়েব সাইট গুলো হতে বা অবাধে উপলব্ধ তৃতীয় পক্ষের ওয়েবসাইট থেকে সংগ্রহ
+            করা। আমরা শুধু ফ্রিতেই স্ট্রিম করার পথ দিচ্ছি একদম বিনামূল্যে এবং সমস্ত সামগ্রী তাদের
+            মালিকের কপিরাইট , যদি এতে বাংলাদেশের আইনের বিপক্ষে যায় দয়া করে আমাদের ইনফর্ম করে দিবেন, আমরা স্ট্রিমিং বন্ধ করে দেবো । - - - 
+            আমাদের Website এ শুধু মাত্র ক্রিকেট ও ফুটবল খেলা স্ট্রিম করা
+            হয়, পাশাপাশি ভালো যেকোন ইভেন্ট স্ট্রিম করে থাকি। আমাদের এপ্স আপনি
+            খুব সহজে আপনার Android মোবাইলে চালাতে পারবেন। সে জন্য আমাদের সাইটে
+            ডাউনলোড লিংক পেয়ে যাবেন, একই এপ্স আপনার বাসা বাড়ির স্মার্ট টিভিতেও
+            দেখতে পারবেন।...... Ⓒ Copyright:-"Sirome TV Stream" We do not
+            stream any channels included in this Website. All streaming links
+            are collected from third party websites freely available on the
+            internet. We're just giving way to stream and all content is the
+            copyright of their owner...... We are Updating Our Application as We
+            Update Our Application Will Be Send Notification To All User's
+            Thanks For Sirome Live TV -----------</marquee>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+    
+<div class="channel-grid">
+    
+    
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/Arabic/Makkah_Al_Quran'">
+<img src="https://i.postimg.cc/NfVsqS5r/Kkvv-I6-Dk-SFik-Jx4-Duf-SZXQ.jpg" alt="AL Makkah">
+<span>AL Makkah</span></div>  
+
+
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/Arabic/Al_Sunnah'">
+<img src="https://i.postimg.cc/Hs7xxTGt/asdss.jpg" alt="Al Sunnah">
+<span>Al Sunnah</span></div>  
+
+
+
+
+	
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/BD/JamunaTV'">
+<img src="https://i.postimg.cc/vThHGnW7/UYKuiqt-SWOi1-FNSZPYEd-Q.jpg" alt="Jamuna TV">
+<span>Jamuna TV</span></div>    
+    
+    
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/BD/Channel24'">
+<img src="https://i.postimg.cc/9fNLHQjX/Screenshot-1.jpg" alt="Channel 24">
+<span>Channel 24</span></div>           
+    
+
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/BD/DBC_News'">
+<img src="https://i.postimg.cc/pd8dKyMF/O-Nzx7-DTRsap-BB-u7w-EYFQ.jpg" alt="DBC News">
+<span>DBC News</span></div> 
+
+
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/BD/SomoyTV'">
+<img src="https://i.postimg.cc/W3gyKdS8/NTV-Bangladesh-logo-svg.png" alt="Somoy TV">
+<span>Somoy TV</span></div> 
+
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/BD/Channel_I'">
+<img src="https://i.postimg.cc/cL7JzvwY/S6g-Zc-UAn-Rp-Sho-Cu0hi7t1-Q.jpg" alt="Channel I">
+<span>Channel I</span></div> 
+
+
+
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/BD/Channel_S_BD'">
+<img src="https://i.postimg.cc/1XhDZddD/2022-10-01a-n16646394228436.png" alt="Channel_S_BD">
+<span>Channel S BD</span></div> 
+
+
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/BD/Boishakhi'">
+<img src="https://i.postimg.cc/HW4DB7Rc/boishakhi.png" alt="Boishakhi"></a>
+<span>Boishakhi</span></div> 
+
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/BD/Channel_S_UK'">
+<img src="https://i.postimg.cc/Hnd3TG3J/UVQEXDrc-Sr-Jkm-GM7u-KQzw.jpg" alt="Channel_S_UK"></a>
+<span>Channel S UK</span></div> 
+
+	
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/IN/ZeeBanglaHD.html'">
+<img src="https://i.postimg.cc/j5TNScxW/8-Yoej8h-Rn-Gmr-Fl3mv-J4m-Q.jpg" alt="Zee Bangla HD">
+<span>Zee Bangla HD</span></div> 
+	
+
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/IN/ZeeBanglaHD1.html'">
+<img src="https://i.postimg.cc/j5TNScxW/8-Yoej8h-Rn-Gmr-Fl3mv-J4m-Q.jpg" alt="Zee Bangla HD1">
+<span>Zee Bangla HD1</span></div> 
+
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/IN/StarJalsha'">
+<img src="https://rubel-live-tv.github.io/Rubel-Live-Tv/starjalsha.jpg" alt="StarJalsha"></a>
+<span>Star Jalsha</span></div> 	
+
+
+
+
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/IN/Enter-10-Bangla'">
+<img src="https://rubel-live-tv.github.io/Rubel-Live-Tv/enter10bangla.jpg" alt="Enter-10-Bangla">
+<span>Enter 10 Bangla</span></div> 
+
+
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/IN/SangeetBangla'">
+<img src="https://i.postimg.cc/Qxqpb3Hn/E6q-Pp7-R8-R0-Crvep62-AHcyg.jpg" alt="Sangeet Bangla">
+<span>Sangeet Bangla</span></div> 
+
+
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/IN/MastiNetwork'">
+<img src="https://rubel-live-tv.github.io/Rubel-Live-Tv/masti%20music.png" alt="Masti Music">
+<span>Masti Music</span></div> 
+
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/IN/BollywoodPrime'">
+<img src="https://i.postimg.cc/fWPwzhLb/8-UVb-VJSt-SWu4-JTet-Znz-Ma-Q.jpg" alt="Bollywood Prime"></a>
+<span>Bollywood Prime</span></div> 
+	
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/DOC/AnimalPlanet'">
+<img src="https://i.postimg.cc/2yKnw0CY/107-1076403-animal-planet-png-animal-planet-logo-2019-transparent.jpg" alt="Animal Planet">
+<span>Animal Planet</span></div> 
+	
+
+<div class="channel-item" onclick="player.location.href='https://mdsirome.github.io/webtv/DOC/TLCHD'">
+<img src="https://i.postimg.cc/0Nh18JC4/TLC-HD.png" alt="TLC HD"></a>
+<span>TLC HD</span></div> 
+
+
+
+
+
+
+
+</div> 
+<br><br>
+	<div style="text-align: center; background-size: cover;">© Copyright 2024  Developed  By: <img scr="https://gifdb.com/images/high/telegram-cute-blue-shades-logo-vsjoshidc3e9gylv.gif"><a  href="https://www.google.com/search?q=sirome+tv" target="_blank">Sirome TV</a></div></div>
+
+<br><br>
+
+	<p style="text-align: center;">
+
+  <script type="text/javascript">
+	atOptions = {
+		'key' : 'fb7e7a4c2a01e949e1973fa5e76c273b',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/fb7e7a4c2a01e949e1973fa5e76c273b/invoke.js"></script>
+  
+
+</p>
+	<p style="text-align: center;">
+
+  <script type="text/javascript">
+	atOptions = {
+		'key' : 'fb7e7a4c2a01e949e1973fa5e76c273b',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/fb7e7a4c2a01e949e1973fa5e76c273b/invoke.js"></script>
+  
+
+</p>
+	<p style="text-align: center;">
+
+  <script type="text/javascript">
+	atOptions = {
+		'key' : 'fb7e7a4c2a01e949e1973fa5e76c273b',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/fb7e7a4c2a01e949e1973fa5e76c273b/invoke.js"></script>
+
+</p>
+	
+<p style="text-align: center;">
+
+  <script type="text/javascript">
+	atOptions = {
+		'key' : 'fb7e7a4c2a01e949e1973fa5e76c273b',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/fb7e7a4c2a01e949e1973fa5e76c273b/invoke.js"></script>
+
+</p>
+
+	
+</body>
+
+</html>
