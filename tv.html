@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html>
 <head>
@@ -45,21 +46,9 @@ body{
 }
 
 
-  </style>
-  
-  
-  
-  
-  
- <style>
 
- .box {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-           
-          }
+
+
 
 .channel-grid {
     display: grid;
@@ -82,9 +71,12 @@ body{
 }
 
 .channel-item img {
-   height:75%;
-   width:100px;
+    width: 120px; /* Set the width to 70 pixels */
+    height: 100px; /* Set the height to 55 pixels */
+    object-fit: ; /* Ensure the image covers the entire area, cropping if necessary */
+    border-radius: 5px; /* Match the border-radius of the channel-item */
 }
+
 
 .channel-item span {
     display: block;
@@ -93,22 +85,43 @@ body{
     text-align: center;
     padding: 1px;
 }
-.blob img{
-    width:50%;
-    display:none;
-    margin:auto;
-    margin-top:25px
-}
 
- .box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
 
+ 
 
 </style> 
+<style>
+      /* Prevent scrolling for embed-responsive */
+.embed-responsive {
+    overflow: hidden; /* Prevent scroll */
+    height: auto;
+}
+
+.embed-responsive iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Prevent scrolling for notice-movies */
+.notice-movies {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Allow scrolling only on channel-grid */
+.channel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    max-height: 400px; /* Set a height to make it scrollable */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+  </style>  
   
   
   
@@ -118,8 +131,7 @@ body{
   
   
   
-  
-  <style>
+<style>
   @import url('https://fonts.maateen.me/adorsho-lipi/font.css');
   
   
@@ -160,6 +172,8 @@ body{
      font-weight:600;left:0;top:0}
 
   </style>
+  
+  
 
 
 </head>
